@@ -1,0 +1,3 @@
+include 'co7217.week17.entity'
+include 'co7217.week17.entity.ide'
+include 'co7217.week17.entity.web'

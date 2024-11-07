@@ -1,0 +1,46 @@
+grammar co7217.week17.entity.EntityDSL with org.eclipse.xtext.common.Terminals
+
+generate entityDSL "http://www.week17.co7217/entity/EntityDSL"
+
+    
+Domainmodel:
+  (elements += AbstractElement)*
+;
+
+// complete declaration of AbstractElemetn 
+AbstractElement:
+  Type
+;
+
+
+// declare import 
+
+
+Type:
+  DataType | Entity
+;
+
+// complete DataType declaration
+DataType:
+  'datatype' name=ID
+;
+
+// declare Literal
+Literal:
+  value=ID
+;
+
+// complete entity declaration 
+Entity:
+  'entity' name = ID 
+;
+
+
+// declare Feature 
+
+
+// declare qualified name
+
+
+// declare enumeration rule
+
